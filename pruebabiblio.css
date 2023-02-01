@@ -1,0 +1,62 @@
+.form-none{
+    display:none;
+}
+.form-popup{
+    display:block;
+}
+
+
+header{
+    background-image: url(header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+    position:fixed;
+    text-align: center;
+    width: 100%;
+    border-radius: 1.5%;
+}
+
+.formNewbook{
+    background-color: aquamarine;
+    width:33%;
+    left:33%;
+    text-align: center;
+    align-items: center;
+    position:fixed;
+    top: 200px;    
+    padding:1%;
+    
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.close-btn{
+    text-align: left;
+}
+
+.formNewbook input{
+    max-width: 95%;
+}
+.bookCont{
+    background-image: url(book-spine.png);
+    background-size:cover;
+    padding: 20px;
+    color:wheat;
+    position: relative;
+    margin: 10px;
+}
+.bookListContainer{
+    position:relative;
+    top: 150px;
+    width: 75%;
+    left:12.5%;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.ayayay{
+    position:relative;
+    top: 500px;
+}
+

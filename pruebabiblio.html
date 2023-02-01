@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="pruebabiblio.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>.:Library:.</title>
+</head>
+
+    <body>
+    
+        <!--Cabezal-->
+        <header class="fixed-top">
+            <h2>My Library</h2>
+            <button onclick="addNewForm()">Add new book</button>
+        </header>
+
+        <!--Aquí los libros-->
+        <div class="bookListContainer">
+            <h2>Book List</h2>
+            <div id="bookList"></div>
+        </div>
+        
+        <!--form new book-->
+        <form class="form-none formNewbook">
+            
+            
+            
+            <div>
+                <button type="button" onclick="closeForm()" class="close-btn btn-close float-end" aria-label="close"></button>
+                
+                <label>
+                    <p>Title</p>
+                </label><br>
+                <input type="text" class="form-label" required placeholder="title" id="vacio">
+                <input type="checkbox" required id="title">
+            </div><br>
+            
+            <div>
+                <label>
+                    <p>Author</p>
+                </label><br>
+                <input type=text required placeholder="author" id="author">
+            </div><br>              
+            <div>
+                <label>
+                    <p>On-line Link (optional)</p>
+                </label><br>
+                <input type=text placeholder="link" id="link">
+            </div>
+            <div>
+                <input type="radio" id="borrowed" name="borrowed" value="borrowed"> 
+                <label>Borrowed</label>
+                <input type=radio checked="checked" id="no-borrowed" name="borrowed" value="not borrowed"> 
+                <label>Not borrowed</label>
+            </div>
+            <div>
+                <button type="submit" onclick="send()" class="send-btn ">Save</button>
+                
+            </div>
+                
+        </form>
+
+        <script src="script.js"></script>
+    </body>
+
+</HTML>
