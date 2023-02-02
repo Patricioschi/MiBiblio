@@ -52,16 +52,16 @@ function createBook(title, author, link, borrowed){
         document.getElementById("bookList").appendChild(linkBtn);
     }
 
-    // borrowed/not borrowed como select
+    // borrowed/available como select
     const borBar = document.createElement("select");
     if(presta=="borrowed")
     {
-        borBar.innerHTML = "<option value='Borrowed' selected>Borrowed</option> <option value='Not Borrowed'>Not Borrowed</option>";
+        borBar.innerHTML = "<option value='Borrowed' selected>Borrowed</option> <option value='Available'>Available</option>";
     }
     
-    if(presta=="not borrowed")
+    if(presta=="available")
     {
-        borBar.innerHTML = "<option value='Borrowed'>Borrowed</option> <option value='Not Borrowed' selected>Not Borrowed</option>";
+        borBar.innerHTML = "<option value='Borrowed'>Borrowed</option> <option value='Available' selected>Available</option>";
     }
     
     document.getElementById("bookList").appendChild(borBar);
@@ -71,4 +71,4 @@ function createBook(title, author, link, borrowed){
 // PRUEBA DE LIBROS
 
 createBook("La biblia","Anónimo","https://biblia.es", "borrowed");
-createBook("Eloquent JavaScript", "Marijn Haverbeke", "https://eloquentjavascript.net","not borrowed");
+createBook("Eloquent JavaScript", "Marijn Haverbeke", "https://eloquentjavascript.net","available");
