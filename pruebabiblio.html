@@ -53,10 +53,11 @@
                 <input type=text placeholder="link" id="link">
             </div>
             <div>
+                <input type=radio checked="checked" id="available" name="borrowed" value="available"> 
+                <label>Available</label>
                 <input type="radio" id="borrowed" name="borrowed" value="borrowed"> 
                 <label>Borrowed</label>
-                <input type=radio checked="checked" id="no-borrowed" name="borrowed" value="not borrowed"> 
-                <label>Not borrowed</label>
+                
             </div>
             <div>
                 <button type="submit" onclick="send()" class="send-btn ">Save</button>
